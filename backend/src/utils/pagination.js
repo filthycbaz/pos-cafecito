@@ -6,11 +6,22 @@ export function parsePagination(query, { defaultLimit = 20, maxLimit = 100 } = {
   const page = query.page === undefined ? 1 : Number(query.page);
   const limit = query.limit === undefined ? defaultLimit : Number(query.limit);
 
+  // Devuelve el valor recibido tal cual lo mandó el cliente (número si lo es, si no el texto).
+  const received = (raw) => (raw !== '' && !Number.isNaN(Number(raw)) ? Number(raw) : raw);
+
   if (!Number.isInteger(page) || page < 1) {
-    errors.push({ field: 'page', message: 'page must be an integer >= 1' });
+    errors.push({
+      field: 'page',
+      value: received(query.page),
+      message: 'page must be a positive integer (greater than or equal to 1)',
+    });
   }
   if (!Number.isInteger(limit) || limit < 1 || limit > maxLimit) {
-    errors.push({ field: 'limit', message: `limit must be a number between 1 and ${maxLimit}` });
+    errors.push({
+      field: 'limit',
+      value: received(query.limit),
+      message: `limit must be a positive integer between 1 and ${maxLimit}`,
+    });
   }
 
   if (errors.length) return { errors };
