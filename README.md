@@ -108,7 +108,8 @@ pos-cafecito/
 │       ├── services/        → llamadas a la API (api.js)
 │       └── styles/          → estilos
 └── docs/
-    └── decisiones.md        → decisiones técnicas del equipo
+    ├── decisiones.md        → decisiones técnicas del equipo
+    └── historias.md         → backlog e historias de usuario
 ```
 
 **Flujo de una petición en el backend:**
@@ -134,4 +135,5 @@ Abre un issue en <https://github.com/filthycbaz/pos-cafecito/issues> con:
 
 - El contrato de API, los edge cases y las reglas de negocio vienen del **Kit de Arranque** del curso.
 - Las decisiones tomadas por el equipo están en [`docs/decisiones.md`](docs/decisiones.md).
+- El backlog y las historias de usuario con criterios de aceptación están en [`docs/historias.md`](docs/historias.md).
 - Fuera del alcance del MVP: pagos reales, facturación, impresoras, multi-sucursal, reportes avanzados.
