@@ -10,10 +10,10 @@
   "name": "cafecito-pos-backend",
   "version": "0.1.0",
   "type": "module",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
     "seed": "node src/seed.js"
   }
 }
