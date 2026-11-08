@@ -15,8 +15,8 @@ function App() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         return res.json()
       })
-      .then((data) => {
-        setProducts(data)
+      .then(({ data }) => {
+        setProducts(data) // el contrato envuelve la lista en { data, total, page, limit }
         setStatus('ok')
       })
       .catch(() => setStatus('error'))
@@ -36,7 +36,7 @@ function App() {
           <p className="ok">✅ Backend conectado — {products.length} productos</p>
           <ul className="products">
             {products.map((p) => (
-              <li key={p._id}>
+              <li key={p.id}>
                 <span>{p.name}</span>
                 <strong>${p.price.toFixed(2)}</strong>
               </li>
