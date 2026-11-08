@@ -109,7 +109,8 @@ pos-cafecito/
 │       └── styles/          → estilos
 └── docs/
     ├── decisiones.md        → decisiones técnicas del equipo
-    └── historias.md         → backlog e historias de usuario
+    ├── historias.md         → backlog e historias de usuario
+    └── sprint-planning.md   → estimación y plan del sprint
 ```
 
 **Flujo de una petición en el backend:**
@@ -136,4 +137,5 @@ Abre un issue en <https://github.com/filthycbaz/pos-cafecito/issues> con:
 - El contrato de API, los edge cases y las reglas de negocio vienen del **Kit de Arranque** del curso.
 - Las decisiones tomadas por el equipo están en [`docs/decisiones.md`](docs/decisiones.md).
 - El backlog y las historias de usuario con criterios de aceptación están en [`docs/historias.md`](docs/historias.md).
+- La estimación en story points y el plan del sprint están en [`docs/sprint-planning.md`](docs/sprint-planning.md).
 - Fuera del alcance del MVP: pagos reales, facturación, impresoras, multi-sucursal, reportes avanzados.

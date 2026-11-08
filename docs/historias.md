@@ -5,6 +5,8 @@ Este documento tiene dos partes:
 1. **Backlog inicial**: todas las necesidades del usuario y del negocio, ordenadas por prioridad.
 2. **Historias refinadas**: las historias listas para desarrollarse, con criterios de aceptación.
 
+La estimación y el plan del sprint están en [`sprint-planning.md`](sprint-planning.md).
+
 Los criterios de aceptación también sirven como **guía de pruebas**: una historia está terminada
 cuando todos sus criterios se cumplen.
 
