@@ -110,7 +110,8 @@ pos-cafecito/
 └── docs/
     ├── decisiones.md        → decisiones técnicas del equipo
     ├── historias.md         → backlog e historias de usuario
-    └── sprint-planning.md   → estimación y plan del sprint
+    ├── sprint-planning.md   → estimación y plan del sprint
+    └── definition-of-done.md → cuándo una historia está terminada y cómo validarla
 ```
 
 **Flujo de una petición en el backend:**
@@ -138,4 +139,5 @@ Abre un issue en <https://github.com/filthycbaz/pos-cafecito/issues> con:
 - Las decisiones tomadas por el equipo están en [`docs/decisiones.md`](docs/decisiones.md).
 - El backlog y las historias de usuario con criterios de aceptación están en [`docs/historias.md`](docs/historias.md).
 - La estimación en story points y el plan del sprint están en [`docs/sprint-planning.md`](docs/sprint-planning.md).
+- La Definition of Done y el plan de validación están en [`docs/definition-of-done.md`](docs/definition-of-done.md).
 - Fuera del alcance del MVP: pagos reales, facturación, impresoras, multi-sucursal, reportes avanzados.
